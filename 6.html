@@ -67,7 +67,7 @@
         }
         .image-container img {
             display: block;
-            width: 80%; /* Full width images */
+            width: 95%; /* Full width images */
             height: auto; /* Maintains aspect ratio */
             border-radius: 10px 10px 0 0;
             margin: 0 auto; /* Auto margins for horizontal centering */
@@ -80,10 +80,12 @@
             <img src="bar_chart_C_.png" alt="Consent Form Image">
         </div>
         <p>
+        <i>
             Try to answer the following questions (5 questions) based on the box plot shown above. Each question will have multiple choice answers. Click "Next" to proceed to the next question. You can skip a question if you are unsure of the answer.
+        </i>
         </p>
         <form id="nextSurveyForm">
-            <div id="questionContainer"></div>
+            <b><div id="questionContainer"></div></b>
             <div style="text-align: center;">
                 <button type="button" onclick="handleNextClick()">Next</button>
             </div>
@@ -92,13 +94,13 @@
 
     <script>
         firebase.initializeApp({
-            apiKey: "AIzaSyD0eycAZyuKw5tFuRS2l2u4k4uqmQfV6KQ",
-  authDomain: "eg-1-testing-contextual-bar.firebaseapp.com",
-  projectId: "eg-1-testing-contextual-bar",
-  storageBucket: "eg-1-testing-contextual-bar.appspot.com",
-  messagingSenderId: "334840336316",
-  appId: "1:334840336316:web:843123c6ae6f055686a5b9",
-  measurementId: "G-0GYXZ997MS"
+            apiKey: "AIzaSyATsMWldBm4WMrs9_1i0aSSVMFATKfzksg",
+  authDomain: "eg-1-testing-annotated-bar.firebaseapp.com",
+  projectId: "eg-1-testing-annotated-bar",
+  storageBucket: "eg-1-testing-annotated-bar.appspot.com",
+  messagingSenderId: "331184741358",
+  appId: "1:331184741358:web:24f55734252ec0b0688cff",
+  measurementId: "G-V8T7210NKK"
         });
         const database = firebase.database();
 
